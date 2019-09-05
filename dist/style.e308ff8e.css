@@ -1,5 +1,9 @@
 h1 {
-  color: red
+  display: none;
+}
+
+.answer {
+  font-size: 6em;
 }
 
 

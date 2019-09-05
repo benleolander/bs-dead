@@ -9843,6 +9843,14 @@ console.log('JS linked');
 
 require('babel-polyfill');
 
+function yesHeIs() {
+  console.log('Yes, he is dead');
+}
+
+function noHeIsNot() {
+  console.log('Nope, he is not dead');
+}
+
 var isBruceDead =
 /*#__PURE__*/
 function () {
@@ -9867,10 +9875,10 @@ function () {
               break;
             }
 
-            return _context.abrupt("return", console.log('Dead'));
+            return _context.abrupt("return", yesHeIs());
 
           case 9:
-            return _context.abrupt("return", console.log('Not Dead'));
+            return _context.abrupt("return", noHeIsNot());
 
           case 10:
             _context.next = 15;

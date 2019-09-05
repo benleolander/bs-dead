@@ -3,10 +3,12 @@ require('babel-polyfill')
 import axios from 'axios'
 
 function yesHeIs() {
-  console.log('Yes, he is dead')
+  const answer = document.querySelector('.answer')
+  answer.innerText = 'Yes!'
 }
 function noHeIsNot() {
-  console.log('Nope, he is not dead')
+  const answer = document.querySelector('.answer')
+  answer.innerText = 'No.'
 }
 
 const isBruceDead = async () => {

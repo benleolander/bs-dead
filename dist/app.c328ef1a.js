@@ -9844,11 +9844,13 @@ console.log('JS linked');
 require('babel-polyfill');
 
 function yesHeIs() {
-  console.log('Yes, he is dead');
+  var answer = document.querySelector('.answer');
+  answer.innerText = 'Yes!';
 }
 
 function noHeIsNot() {
-  console.log('Nope, he is not dead');
+  var answer = document.querySelector('.answer');
+  answer.innerText = 'No.';
 }
 
 var isBruceDead =

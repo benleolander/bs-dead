@@ -17,8 +17,7 @@ h1 {
 .answer {
   font-size: 11em;
   font-weight: bold;
-  margin: 0 auto;
-  margin-top: 30vh;
+  margin: auto;
 }
 
 footer {
@@ -33,7 +32,12 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: inherit;
+  color: hsl(168,99%,25%);
+  transition: all 0.2s linear;
+}
+
+footer a:hover {
+  color: hsl(168,99%,15%);
 }
 
 

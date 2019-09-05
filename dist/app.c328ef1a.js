@@ -9839,19 +9839,7 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-console.log('JS linked');
-
 require('babel-polyfill');
-
-function yesHeIs() {
-  var answer = document.querySelector('.answer');
-  answer.innerText = 'Yes!';
-}
-
-function noHeIsNot() {
-  var answer = document.querySelector('.answer');
-  answer.innerText = 'No.';
-}
 
 var isBruceDead =
 /*#__PURE__*/
@@ -9877,10 +9865,10 @@ function () {
               break;
             }
 
-            return _context.abrupt("return", yesHeIs());
+            return _context.abrupt("return", document.querySelector('.answer').innerText = 'Yes!');
 
           case 9:
-            return _context.abrupt("return", noHeIsNot());
+            return _context.abrupt("return", document.querySelector('.answer').innerText = 'No.');
 
           case 10:
             _context.next = 15;

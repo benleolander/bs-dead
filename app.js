@@ -1,15 +1,5 @@
-console.log('JS linked')
 require('babel-polyfill')
 import axios from 'axios'
-
-function yesHeIs() {
-  const answer = document.querySelector('.answer')
-  answer.innerText = 'Yes!'
-}
-function noHeIsNot() {
-  const answer = document.querySelector('.answer')
-  answer.innerText = 'No.'
-}
 
 const isBruceDead = async () => {
   try {
@@ -17,8 +7,8 @@ const isBruceDead = async () => {
 
     const bruce = res.data.d.results[0]
 
-    if (bruce['http://dbpedia.org/ontology/deathDate']) return yesHeIs()
-    else return noHeIsNot()
+    if (bruce['http://dbpedia.org/ontology/deathDate']) return document.querySelector('.answer').innerText = 'Yes!'
+    else return document.querySelector('.answer').innerText = 'No.'
 
   } catch (e) {
     console.error(e)

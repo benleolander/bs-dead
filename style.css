@@ -1,7 +1,32 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
 h1 {
   display: none;
 }
 
 .answer {
-  font-size: 6em;
+  font-size: 11em;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 30vh;
+}
+
+footer {
+  background-color: #ccc;
+  font-weight: lighter;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
 }

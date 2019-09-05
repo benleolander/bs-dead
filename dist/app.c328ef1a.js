@@ -9843,15 +9843,6 @@ console.log('JS linked');
 
 require('babel-polyfill');
 
-// let bruce
-//
-// function isBruceDead() {
-//   axios
-//     .get()
-//     .then(res => {
-//       bruce = res.data.d.results[0]
-//     })
-// }
 var isBruceDead =
 /*#__PURE__*/
 function () {
@@ -9876,9 +9867,7 @@ function () {
               break;
             }
 
-            console.log('Dead');
-            _context.next = 10;
-            break;
+            return _context.abrupt("return", console.log('Dead'));
 
           case 9:
             return _context.abrupt("return", console.log('Not Dead'));
